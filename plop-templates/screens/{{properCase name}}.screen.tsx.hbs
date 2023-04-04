@@ -1,0 +1,19 @@
+import React, { FC } from 'react';
+import { View, Text } from 'react-native';
+import { useTheme } from 'react-native-paper';
+import { {{properCase name}}Props } from './{{properCase name}}.props';
+
+import makeStyles from './{{properCase name}}.styles';
+
+const {{pascalCase name}}: FC<{{properCase name}}Props> = () => {
+  const theme = useTheme();
+  const styles = makeStyles(theme);
+
+  return (
+    <View style={styles.container}>
+      <Text>{{pascalCase name}} Screen</Text>
+    </View>
+  );
+};
+
+export { {{pascalCase name}} };

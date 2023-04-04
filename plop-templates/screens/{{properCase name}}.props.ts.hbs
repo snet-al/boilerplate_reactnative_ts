@@ -1,0 +1,6 @@
+export type {{properCase name}}Props = {{properCase name}}NavigationProps<'{{properCase name}}'>;
+
+export type {{properCase name}}NavigationProps<T extends keyof TRootStackParamList> = {
+  navigation: NativeStackNavigationProp<TRootStackParamList, T>;
+  route: RouteProp<TRootStackParamList, T>;
+};
